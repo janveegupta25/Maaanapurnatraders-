@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maa Anpurna Traders | Grocery Store in Basantpur, Siwan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<meta name="description" content="Maa Anpurna Traders is a trusted grocery store in Basantpur, Siwan. Wholesale and retail grocery items including rice, dal, spices, oil and daily essentials.">
+<meta name="keywords" content="Maa Anpurna Traders, grocery store Basantpur, grocery shop Siwan, wholesale grocery Bihar">
+<meta name="author" content="Maa Anpurna Traders">
+
+<style>
+/* ---------- RESET ---------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+body{
+    background:#f2f4f6;
+    color:#2d2d2d;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+@keyframes slideDown{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+@keyframes pop{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* ---------- HEADER ---------- */
+header{
+    background:linear-gradient(135deg,#0f3d2e,#2e7d32);
+    text-align:center;
+    padding:45px 20px;
+    color:white;
+    animation:fadeUp 1s ease;
+}
+.logo{
+    width:120px;
+    margin:0 auto 15px;
+    animation:pop 1s ease;
+}
+
+/* ---------- NAV ---------- */
+nav{
+    background:#0f3d2e;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:14px;
+    flex-wrap:wrap;
+    animation:slideDown 1s ease;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    position:relative;
+}
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#c8e6c9;
+    left:0;
+    bottom:-4px;
+    transition:0.3s;
+}
+nav a:hover::after{
+    width:100%;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url("images/shop1.jpg") center/cover;
+    padding:80px 20px;
+    text-align:center;
+    color:white;
+}
+.hero h2{
+    font-size:36px;
+    animation:fadeUp 1.2s ease;
+}
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+    animation:fadeUp 1.4s ease;
+}
+
+/* ---------- CONTAINER ---------- */
+.container{
+    max-width:1150px;
+    margin:40px auto;
+    padding:0 16px;
+}
+.section{
+    background:white;
+    padding:35px;
+    margin-bottom:35px;
+    border-radius:14px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.08);
+    animation:fadeUp 1s ease;
+}
+.section h2{
+    color:#0f3d2e;
+    margin-bottom:18px;
+    border-left:6px solid #2e7d32;
+    padding-left:14px;
+}
+.section p, li{
+    line-height:1.8;
+    font-size:15.5px;
+}
+ul{padding-left:22px;}
+
+/* ---------- TRUST ---------- */
+.trust{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+.trust div{
+    background:#e8f5e9;
+    padding:20px;
+    border-radius:12px;
+    font-weight:600;
+    text-align:center;
+    transition:0.3s;
+}
+.trust div:hover{
+    transform:translateY(-6px);
+}
+
+/* ---------- GALLERY ---------- */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:18px;
+}
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;
+}
+.testimonials div{
+    background:#f9f9f9;
+    padding:22px;
+    border-radius:12px;
+    border-left:5px solid #2e7d32;
+    transition:0.3s;
+}
+.testimonials div:hover{
+    transform:translateY(-6px);
+}
+
+/* ---------- BUTTONS ---------- */
+.buttons{
+    display:flex;
+    gap:16px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+.btn{
+    padding:12px 22px;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.08);
+}
+.call{background:#1b5e20;}
+.whatsapp{background:#25D366;}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+    background:#0f3d2e;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+    animation:fadeUp 1s ease;
+}
+
+@media(max-width:600px){
+    .hero h2{font-size:26px;}
+    nav{gap:12px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<svg class="logo" viewBox="0 0 120 120">
+    <circle cx="60" cy="60" r="58" fill="#ffffff"/>
+    <circle cx="60" cy="60" r="52" fill="#1b5e20"/>
+    <path d="M40 70 C45 55, 55 45, 60 40 C65 45, 75 55, 80 70"
+          fill="none" stroke="#c8e6c9" stroke-width="4"/>
+    <text x="60" y="70" text-anchor="middle"
+          fill="white" font-size="18" font-weight="bold">MAA</text>
+</svg>
+
+<h1>Maa Anpurna Traders</h1>
+<p>Premium Grocery • Wholesale & Retail</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Trusted Grocery Store</h2>
+<p>Quality Products • Honest Prices • Local Trust</p>
+</section>
+
+<div class="container">
+
+<div class="section" id="about">
+<h2>About Us</h2>
+<p>
+Maa Anpurna Traders is a trusted grocery shop in Basantpur, Siwan,
+providing high-quality daily essentials to customers and retailers.
+We believe in purity, fair pricing, and long-term relationships.
+</p>
+</div>
+
+<div class="section">
+<h2>Why Choose Us</h2>
+<div class="trust">
+<div>✔ Fresh & Quality Products</div>
+<div>✔ Honest Pricing</div>
+<div>✔ Wholesale & Retail Available</div>
+<div>✔ Trusted by Local Customers</div>
+</div>
+</div>
+
+<div class="section" id="gallery">
+<h2>Our Shop Gallery</h2>
+<div class="gallery">
+<img src="images/shop1.jpg" loading="lazy">
+<img src="images/shop2.jpg" loading="lazy">
+<img src="images/shop3.jpg" loading="lazy">
+<img src="images/shop4.jpg" loading="lazy">
+<img src="images/shop5.jpg" loading="lazy">
+<img src="images/shop6.jpg" loading="lazy">
+</div>
+</div>
+
+<div class="section" id="products">
+<h2>Our Products</h2>
+<ul>
+<li>Rice, Wheat, Atta & Grains</li>
+<li>All Types of Pulses (Dal)</li>
+<li>Spices & Masala</li>
+<li>Edible Oil & Ghee</li>
+<li>Sugar, Salt & Daily Essentials</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Opening Hours</h2>
+<p>
+🕘 Monday – Saturday: <strong>7:00 AM – 9:30 PM</strong><br>
+🕘 Sunday: <strong>7:00 AM – 8:00 PM</strong>
+</p>
+</div>
+
+<div class="section">
+<h2>Customer Reviews</h2>
+<div class="testimonials">
+<div>⭐⭐⭐⭐⭐<br><strong>Local Customer</strong><br>Fresh products and fair prices.</div>
+<div>⭐⭐⭐⭐⭐<br><strong>Retail Shop Owner</strong><br>Best wholesale grocery shop.</div>
+<div>⭐⭐⭐⭐⭐<br><strong>Regular Buyer</strong><br>Clean shop and honest dealing.</div>
+</div>
+</div>
+
+<div class="section" id="terms">
+<h2>Terms & Conditions</h2>
+<ul>
+<li>Products are sold with commitment to quality.</li>
+<li>Stock availability may vary.</li>
+<li>Wholesale orders should be confirmed in advance.</li>
+<li>Prices may change as per market.</li>
+<li>Disputes will be handled respectfully.</li>
+</ul>
+</div>
+
+<div class="section" id="contact">
+<h2>Contact & Location</h2>
+<p>
+<strong>Address:</strong><br>
+Malmaliya Basantpur Road,<br>
+Basantpur, Siwan (Bihar)
+</p>
+
+<p style="margin-top:10px;">
+<strong>Phone / WhatsApp:</strong><br>
+9955276664, 9065899911
+</p>
+
+<div class="buttons">
+<a class="btn call" href="tel:9955276664">📞 Call Now</a>
+<a class="btn whatsapp" href="https://wa.me/919955276664">💬 WhatsApp</a>
+</div>
+
+<iframe src="https://www.google.com/maps?q=Maa%20Anpurna%20Traders%20Basantpur%20Siwan&output=embed"></iframe>
+</div>
+
+</div>
+
+<footer>
+© 2026 Maa Anpurna Traders | Grocery Store in Basantpur, Siwan
+</footer>
+
+</body>
+</html>
